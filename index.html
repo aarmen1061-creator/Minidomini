@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИП Арутюнян А.Р.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main content */
+        main {
+            background-color: #fff;
+            margin: 30px auto;
+            max-width: 900px;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .info-label {
+            font-weight: 600;
+            min-width: 200px;
+            color: #555;
+        }
+
+        .info-label a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .info-label a:hover {
+            text-decoration: underline;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        .info-value a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .info-value a:hover {
+            text-decoration: underline;
+        }
+
+        /* Documents */
+        .document-list {
+            list-style: none;
+        }
+
+        .document-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .document-list li:last-child {
+            border-bottom: none;
+        }
+
+        .document-list a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .document-list a:hover {
+            text-decoration: underline;
+        }
+
+        .document-list a::before {
+            content: '\1F4C4';
+            font-size: 18px;
+        }
+
+        /* Separator */
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 25px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #888;
+            font-size: 14px;
+            border-top: 1px solid #ddd;
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 18px;
+            }
+
+            main {
+                margin: 15px;
+                padding: 25px;
+            }
+
+            .info-row {
+                flex-direction: column;
+            }
+
+            .info-label {
+                min-width: auto;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ИП Арутюнян А.Р.</h1>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Общие сведения</h2>
+
+            <div class="info-row">
+                <span class="info-label">Наименование:</span>
+                <span class="info-value">ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ АРУТЮНЯН АРМЕН РУДИКОВИЧ</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">ИНН:</span>
+                <span class="info-value">772489197035</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">ОГРНИП:</span>
+                <span class="info-value">319774600514418</span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Адрес:</span>
+                <span class="info-value">115304, г. Москва, ул. Медиков, д. 26, корп. 2, кв. 40</span>
+            </div>
+
+            <hr>
+
+            <div class="info-row">
+                <span class="info-label"><a href="docs/Карточка организации.pdf" target="_blank">Карточка организации</a></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label"><a href="docs/ЕГРИП.pdf" target="_blank">Выписка из ЕГРИП</a></span>
+            </div>
+
+            <hr>
+
+            <div class="info-row">
+                <span class="info-label">Телефон:</span>
+                <span class="info-value"><a href="tel:+79175584040">8 (917) 558-40-40</a></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-label">Email:</span>
+                <span class="info-value"><a href="mailto:ottminidomini@mail.ru">ottminidomini@mail.ru</a></span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Документы</h2>
+            <ul class="document-list">
+                <li>
+                    <a href="docs/Дополнительная общеобразовательная программа.pdf" target="_blank">
+                        Дополнительная общеобразовательная программа &laquo;Занимательный английский для школьников&raquo;
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; ИП Арутюнян А.Р. 2026
+        </div>
+    </footer>
+
+</body>
+</html>
